@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Bond (6.8.3):
+    - Differ (~> 1.0)
+    - ReactiveKit (~> 3.9)
+  - Differ (1.2.3)
+  - ReactiveKit (3.9.6)
+  - RIBs (0.9.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SwiftLint (0.27.0)
+  - Swinject (2.4.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Bond (~> 6.8)
+  - RIBs (~> 0.9)
+  - SwiftLint (~> 0.27)
+  - Swinject (~> 2.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Bond
+    - Differ
+    - ReactiveKit
+    - RIBs
+    - RxSwift
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bond: d6d25c0cb90459b9d27197251405c6db254da4cf
+  Differ: 061f3298ea9408494c43b530c44583e555884daf
+  ReactiveKit: 804d3093ad42dee0de19e42d4f7dcae9c14364b0
+  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  Swinject: f7f15a9672e99328c1f07f277091087917215700
+
+PODFILE CHECKSUM: deee2f6c1af47810b986881322603d8783db41c8
+
+COCOAPODS: 1.5.3
