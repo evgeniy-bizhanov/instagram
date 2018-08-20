@@ -15,6 +15,10 @@
 		7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F02129DE9E0048F2BA /* ErrorParser.swift */; };
 		7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F12129DE9E0048F2BA /* RequestRouter.swift */; };
 		7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */; };
+		7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */; };
+		7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */; };
+		7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */; };
+		7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */; };
 		C7CCB58A8EBA46A026F9C64F /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64E188972BAA82CA28FED57 /* Pods_instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		7A8103F02129DE9E0048F2BA /* ErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		7A8103F12129DE9E0048F2BA /* RequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRequestManager.swift; sourceTree = "<group>"; };
+		7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembler.swift; sourceTree = "<group>"; };
+		7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryHelper.swift; sourceTree = "<group>"; };
+		7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractModuleBuilder.swift; sourceTree = "<group>"; };
+		7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServiceAssembler.swift; sourceTree = "<group>"; };
 		A9C22C1CFE7D339DA68C650C /* Pods-instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BA009B18C59DABA0D075E9B4 /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		C64E188972BAA82CA28FED57 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +104,7 @@
 		7A4AC0012129C906007E108C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7A8104052129F2640048F2BA /* Injection */,
 				7A8103ED2129DE9E0048F2BA /* Network */,
 			);
 			path = Core;
@@ -121,6 +130,8 @@
 		7A4AC0042129C935007E108C /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */,
+				7A8103F82129F1F80048F2BA /* Assemblers */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -136,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7A4AC0072129C93E007E108C /* AppDelegate */,
+				7A81040A2129F4170048F2BA /* Network */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -156,6 +168,30 @@
 				7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */,
 				7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */,
 				7A8103F12129DE9E0048F2BA /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7A8103F82129F1F80048F2BA /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */,
+			);
+			path = Assemblers;
+			sourceTree = "<group>";
+		};
+		7A8104052129F2640048F2BA /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */,
+				7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		7A81040A2129F4170048F2BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -301,10 +337,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */,
+				7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */,
 				7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */,
+				7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */,
 				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
+				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
 				7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */,
+				7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */,
 				7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
