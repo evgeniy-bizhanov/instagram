@@ -22,9 +22,8 @@ extension RequestRouter {
         let encoding: RequestRouterEncoding
         
         switch method {
-        case .post:
-            fallthrough
-        case .put:
+        case .post,
+             .put:
             encoding = .json
         default:
             encoding = .url

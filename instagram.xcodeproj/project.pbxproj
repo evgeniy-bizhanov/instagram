@@ -240,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A384B8621289D1F008E682E /* Build configuration list for PBXNativeTarget "instagram" */;
 			buildPhases = (
+				7A810416212A7EE60048F2BA /* SwiftLint */,
 				BA993ECBD09AB234BAC864F0 /* [CP] Check Pods Manifest.lock */,
 				7A384B7021289D1D008E682E /* Sources */,
 				7A384B7121289D1D008E682E /* Frameworks */,
@@ -331,6 +332,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7A810416212A7EE60048F2BA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		BA993ECBD09AB234BAC864F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
