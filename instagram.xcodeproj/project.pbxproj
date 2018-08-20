@@ -19,6 +19,10 @@
 		7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */; };
 		7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */; };
 		7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */; };
+		7A81040F212A7AB70048F2BA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81040E212A7AB70048F2BA /* AuthViewController.swift */; };
+		7A810411212A7B460048F2BA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810410212A7B460048F2BA /* AuthViewModel.swift */; };
+		7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810412212A7BE00048F2BA /* AuthViewRouter.swift */; };
+		7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A810414212A7CF20048F2BA /* Auth.storyboard */; };
 		C7CCB58A8EBA46A026F9C64F /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64E188972BAA82CA28FED57 /* Pods_instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 		7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryHelper.swift; sourceTree = "<group>"; };
 		7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractModuleBuilder.swift; sourceTree = "<group>"; };
 		7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServiceAssembler.swift; sourceTree = "<group>"; };
+		7A81040E212A7AB70048F2BA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7A810410212A7B460048F2BA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7A810412212A7BE00048F2BA /* AuthViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewRouter.swift; sourceTree = "<group>"; };
+		7A810414212A7CF20048F2BA /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		A9C22C1CFE7D339DA68C650C /* Pods-instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BA009B18C59DABA0D075E9B4 /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		C64E188972BAA82CA28FED57 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +121,7 @@
 		7A4AC0022129C90A007E108C /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7A81040D212A7A8A0048F2BA /* Auth */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -196,6 +205,17 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		7A81040D212A7A8A0048F2BA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7A81040E212A7AB70048F2BA /* AuthViewController.swift */,
+				7A810410212A7B460048F2BA /* AuthViewModel.swift */,
+				7A810412212A7BE00048F2BA /* AuthViewRouter.swift */,
+				7A810414212A7CF20048F2BA /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		9CF78C5CCA1DF1EE9E968A5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */,
 				7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
 			);
@@ -336,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A81040F212A7AB70048F2BA /* AuthViewController.swift in Sources */,
 				7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */,
 				7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */,
 				7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */,
@@ -343,8 +365,10 @@
 				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
 				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
+				7A810411212A7B460048F2BA /* AuthViewModel.swift in Sources */,
 				7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */,
 				7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */,
+				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
 				7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
