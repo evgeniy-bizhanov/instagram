@@ -13,8 +13,8 @@ class AuthServiceAssembler: Assembly {
             return AuthViewModel()
         }
         
-        container.register(AbstractAuthViewRouter.self) { _ in
-            return AuthViewRouter()
+        container.register(AbstractAuthViewRouter.self) { _, vc in
+            return AuthViewRouter(viewController: vc)
         }
     }
 }

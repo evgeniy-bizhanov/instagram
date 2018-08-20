@@ -18,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // Override point for customization after application launch.
+        window = UIWindow()
+        
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        window?.rootViewController = storyboard.instantiateInitialViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }
