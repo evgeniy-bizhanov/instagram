@@ -26,6 +26,18 @@
 		7A810418212A830E0048F2BA /* AuthViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810417212A830E0048F2BA /* AuthViewBuilder.swift */; };
 		7A81041D212ABAC10048F2BA /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81041C212ABAC10048F2BA /* Functional.swift */; };
 		7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81041E212ABD2B0048F2BA /* Credentials.swift */; };
+		7A810421212AD8490048F2BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810420212AD8490048F2BA /* User.swift */; };
+		7A810423212ADBB60048F2BA /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810422212ADBB60048F2BA /* ProfileService.swift */; };
+		7A810425212ADE990048F2BA /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810424212ADE980048F2BA /* RequestManager.swift */; };
+		7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810426212ADEBB0048F2BA /* AppConfig.swift */; };
+		7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */; };
+		7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CA212AE32200265CA0 /* ProfileViewController.swift */; };
+		7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */; };
+		7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */; };
+		7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */; };
+		7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD220CB212AE32200265CA0 /* Profile.storyboard */; };
+		7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */; };
+		7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4977A212AF1A300B79CA3 /* Injector.swift */; };
 		C7CCB58A8EBA46A026F9C64F /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64E188972BAA82CA28FED57 /* Pods_instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +63,18 @@
 		7A810417212A830E0048F2BA /* AuthViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewBuilder.swift; sourceTree = "<group>"; };
 		7A81041C212ABAC10048F2BA /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
 		7A81041E212ABD2B0048F2BA /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		7A810420212AD8490048F2BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A810422212ADBB60048F2BA /* ProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		7A810424212ADE980048F2BA /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7A810426212ADEBB0048F2BA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceAssembler.swift; sourceTree = "<group>"; };
+		7AD220CA212AE32200265CA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7AD220CB212AE32200265CA0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBuilder.swift; sourceTree = "<group>"; };
+		7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewRouter.swift; sourceTree = "<group>"; };
+		7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveOperators.swift; sourceTree = "<group>"; };
+		7AF4977A212AF1A300B79CA3 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		A9C22C1CFE7D339DA68C650C /* Pods-instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BA009B18C59DABA0D075E9B4 /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		C64E188972BAA82CA28FED57 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +133,7 @@
 		7A4AC0002129C8FE007E108C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7A810426212ADEBB0048F2BA /* AppConfig.swift */,
 				7A384B7E21289D1F008E682E /* Assets.xcassets */,
 				7A384B8021289D1F008E682E /* LaunchScreen.storyboard */,
 			);
@@ -118,6 +143,7 @@
 		7A4AC0012129C906007E108C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */,
 				7A81041C212ABAC10048F2BA /* Functional.swift */,
 				7A8104052129F2640048F2BA /* Injection */,
 				7A8103ED2129DE9E0048F2BA /* Network */,
@@ -128,6 +154,7 @@
 		7A4AC0022129C90A007E108C /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7AD220C9212AE30F00265CA0 /* Profile */,
 				7A81040D212A7A8A0048F2BA /* Auth */,
 			);
 			path = Flows;
@@ -146,6 +173,7 @@
 		7A4AC0042129C935007E108C /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				7AF4977A212AF1A300B79CA3 /* Injector.swift */,
 				7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */,
 				7A8103F82129F1F80048F2BA /* Assemblers */,
 			);
@@ -155,6 +183,7 @@
 		7A4AC0052129C937007E108C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				7A810420212AD8490048F2BA /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -193,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */,
+				7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */,
 			);
 			path = Assemblers;
 			sourceTree = "<group>";
@@ -209,6 +239,8 @@
 		7A81040A2129F4170048F2BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7A810424212ADE980048F2BA /* RequestManager.swift */,
+				7A810422212ADBB60048F2BA /* ProfileService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -223,6 +255,18 @@
 				7A810414212A7CF20048F2BA /* Auth.storyboard */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		7AD220C9212AE30F00265CA0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7AD220CA212AE32200265CA0 /* ProfileViewController.swift */,
+				7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */,
+				7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */,
+				7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */,
+				7AD220CB212AE32200265CA0 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		9CF78C5CCA1DF1EE9E968A5F /* Frameworks */ = {
@@ -305,6 +349,7 @@
 			files = (
 				7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */,
 				7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */,
+				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,21 +427,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A81040F212A7AB70048F2BA /* AuthViewController.swift in Sources */,
+				7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */,
 				7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */,
+				7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */,
+				7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */,
 				7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */,
 				7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */,
+				7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */,
+				7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */,
 				7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */,
 				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
+				7A810425212ADE990048F2BA /* RequestManager.swift in Sources */,
 				7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */,
+				7A810421212AD8490048F2BA /* User.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
 				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
 				7A810411212A7B460048F2BA /* AuthViewModel.swift in Sources */,
+				7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */,
 				7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */,
 				7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */,
 				7A810418212A830E0048F2BA /* AuthViewBuilder.swift in Sources */,
+				7A810423212ADBB60048F2BA /* ProfileService.swift in Sources */,
+				7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */,
 				7A81041D212ABAC10048F2BA /* Functional.swift in Sources */,
 				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
 				7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */,
+				7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

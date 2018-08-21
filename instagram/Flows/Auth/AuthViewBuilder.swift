@@ -5,10 +5,14 @@
 import Swinject
 
 class AuthViewBuilder: AbstractModuleBuilder {
-    @IBOutlet weak var vc: AuthViewController!
+    @IBOutlet weak var viewController: AuthViewController!
     
     override func resolve(resolver: Resolver) {
-        vc.viewModel = resolver.resolve(AbstractAuthViewModel.self)
-        vc.router = resolver.resolve(AbstractAuthViewRouter.self, argument: vc)
+        viewController.viewModel = resolver.resolve(AbstractAuthViewModel.self)
+        
+        viewController.router = resolver.resolve(
+            AbstractAuthViewRouter.self,
+            argument: viewController
+        )
     }
 }

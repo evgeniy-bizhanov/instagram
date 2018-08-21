@@ -8,7 +8,8 @@ import Swinject
 private let assembler: Assembler = Assembler(
     [
         ServiceAssembler(),
-        AuthServiceAssembler()
+        AuthServiceAssembler(),
+        ProfileServiceAssembler()
     ]
 )
 

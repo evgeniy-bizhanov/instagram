@@ -5,25 +5,21 @@
 import UIKit
 
 /// Роутер переходов с экрана аутентификации
-protocol AbstractAuthViewRouter { }
+protocol AbstractProfileViewRouter { }
 
-class AuthViewRouter: AbstractAuthViewRouter {
+class ProfileViewRouter: AbstractProfileViewRouter {
     // MARK: - Models
     // MARK: - Properties
     // MARK: - Fields
     
-    weak var viewController: AuthViewController!
+    weak var viewController: ProfileViewController!
     
     
     // MARK: - Functions
-    
-    
-    
-    
     // MARK: - Services
     
     // MARK: - Initializers
-    init(viewController: AuthViewController?) {
+    init(viewController: ProfileViewController?) {
         self.viewController = viewController
     }
 }

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,37 +12,36 @@
         <!--View Controller-->
         <scene sceneID="UNY-hc-hfG">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" id="4da-O4-k9q" customClass="AuthViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" id="4da-O4-k9q" customClass="ProfileViewController" customModule="instagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="if8-Zl-2bS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="190-n2-HCP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waI-iq-NHe">
+                                <rect key="frame" x="67" y="323" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6w9-4q-T6Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="190-n2-HCP" firstAttribute="bottom" secondItem="YPr-O6-xUy" secondAttribute="bottom" id="DT8-rQ-iZX"/>
-                            <constraint firstItem="190-n2-HCP" firstAttribute="trailing" secondItem="YPr-O6-xUy" secondAttribute="trailing" id="d2U-dg-Nam"/>
-                            <constraint firstItem="190-n2-HCP" firstAttribute="top" secondItem="YPr-O6-xUy" secondAttribute="top" id="jQD-1t-dEh"/>
-                            <constraint firstItem="190-n2-HCP" firstAttribute="leading" secondItem="YPr-O6-xUy" secondAttribute="leading" id="mrS-15-gIg"/>
+                            <constraint firstItem="waI-iq-NHe" firstAttribute="centerY" secondItem="if8-Zl-2bS" secondAttribute="centerY" id="MQW-MO-49O"/>
+                            <constraint firstItem="waI-iq-NHe" firstAttribute="centerX" secondItem="if8-Zl-2bS" secondAttribute="centerX" id="TQV-5r-1wt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YPr-O6-xUy"/>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="190-n2-HCP" id="JVL-pV-1mZ"/>
+                        <outlet property="userName" destination="waI-iq-NHe" id="t50-wg-I4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-xc-SeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="1JZ-BV-7wJ" customClass="AuthViewBuilder" customModule="instagram" customModuleProvider="target">
+                <customObject id="1JZ-BV-7wJ" customClass="ProfileViewBuilder" customModule="instagram">
                     <connections>
-                        <outlet property="viewController" destination="4da-O4-k9q" id="uqF-ga-ve9"/>
+                        <outlet property="viewController" destination="4da-O4-k9q" id="I56-ce-Kud"/>
                     </connections>
                 </customObject>
             </objects>

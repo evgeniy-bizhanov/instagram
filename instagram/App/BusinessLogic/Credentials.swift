@@ -18,4 +18,6 @@ class Credentials {
         get { return UserDefaults.standard.value(forKey: tokenKey) as? String }
         set { UserDefaults.standard.set(newValue, forKey: tokenKey) }
     }
+    
+    private init() { }
 }
