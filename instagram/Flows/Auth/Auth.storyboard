@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4da-O4-k9q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UNY-hc-hfG">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" id="4da-O4-k9q" customClass="AuthViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="if8-Zl-2bS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="190-n2-HCP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="190-n2-HCP" firstAttribute="bottom" secondItem="YPr-O6-xUy" secondAttribute="bottom" id="DT8-rQ-iZX"/>
+                            <constraint firstItem="190-n2-HCP" firstAttribute="trailing" secondItem="YPr-O6-xUy" secondAttribute="trailing" id="d2U-dg-Nam"/>
+                            <constraint firstItem="190-n2-HCP" firstAttribute="top" secondItem="YPr-O6-xUy" secondAttribute="top" id="jQD-1t-dEh"/>
+                            <constraint firstItem="190-n2-HCP" firstAttribute="leading" secondItem="YPr-O6-xUy" secondAttribute="leading" id="mrS-15-gIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YPr-O6-xUy"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="190-n2-HCP" id="JVL-pV-1mZ"/>
+                        <segue destination="dVK-4r-I3I" kind="show" identifier="showProfile" id="OiG-BN-2Jp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-xc-SeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="1JZ-BV-7wJ" customClass="AuthViewBuilder" customModule="instagram" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="4da-O4-k9q" id="uqF-ga-ve9"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="86" y="132"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="B08-Ht-QN9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="dVK-4r-I3I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUP-1a-hsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="131"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,6 +10,34 @@
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
+		7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */; };
+		7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */; };
+		7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F02129DE9E0048F2BA /* ErrorParser.swift */; };
+		7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F12129DE9E0048F2BA /* RequestRouter.swift */; };
+		7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */; };
+		7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */; };
+		7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */; };
+		7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */; };
+		7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */; };
+		7A81040F212A7AB70048F2BA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81040E212A7AB70048F2BA /* AuthViewController.swift */; };
+		7A810411212A7B460048F2BA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810410212A7B460048F2BA /* AuthViewModel.swift */; };
+		7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810412212A7BE00048F2BA /* AuthViewRouter.swift */; };
+		7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A810414212A7CF20048F2BA /* Auth.storyboard */; };
+		7A810418212A830E0048F2BA /* AuthViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810417212A830E0048F2BA /* AuthViewBuilder.swift */; };
+		7A81041D212ABAC10048F2BA /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81041C212ABAC10048F2BA /* Functional.swift */; };
+		7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81041E212ABD2B0048F2BA /* Credentials.swift */; };
+		7A810421212AD8490048F2BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810420212AD8490048F2BA /* User.swift */; };
+		7A810423212ADBB60048F2BA /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810422212ADBB60048F2BA /* ProfileService.swift */; };
+		7A810425212ADE990048F2BA /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810424212ADE980048F2BA /* RequestManager.swift */; };
+		7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810426212ADEBB0048F2BA /* AppConfig.swift */; };
+		7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */; };
+		7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CA212AE32200265CA0 /* ProfileViewController.swift */; };
+		7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */; };
+		7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */; };
+		7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */; };
+		7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD220CB212AE32200265CA0 /* Profile.storyboard */; };
+		7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */; };
+		7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4977A212AF1A300B79CA3 /* Injector.swift */; };
 		C7CCB58A8EBA46A026F9C64F /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64E188972BAA82CA28FED57 /* Pods_instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +47,34 @@
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A384B8121289D1F008E682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A384B8321289D1F008E682E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
+		7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		7A8103F02129DE9E0048F2BA /* ErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		7A8103F12129DE9E0048F2BA /* RequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRequestManager.swift; sourceTree = "<group>"; };
+		7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembler.swift; sourceTree = "<group>"; };
+		7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryHelper.swift; sourceTree = "<group>"; };
+		7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractModuleBuilder.swift; sourceTree = "<group>"; };
+		7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServiceAssembler.swift; sourceTree = "<group>"; };
+		7A81040E212A7AB70048F2BA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7A810410212A7B460048F2BA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7A810412212A7BE00048F2BA /* AuthViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewRouter.swift; sourceTree = "<group>"; };
+		7A810414212A7CF20048F2BA /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		7A810417212A830E0048F2BA /* AuthViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewBuilder.swift; sourceTree = "<group>"; };
+		7A81041C212ABAC10048F2BA /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		7A81041E212ABD2B0048F2BA /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		7A810420212AD8490048F2BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A810422212ADBB60048F2BA /* ProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		7A810424212ADE980048F2BA /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7A810426212ADEBB0048F2BA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceAssembler.swift; sourceTree = "<group>"; };
+		7AD220CA212AE32200265CA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7AD220CB212AE32200265CA0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBuilder.swift; sourceTree = "<group>"; };
+		7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewRouter.swift; sourceTree = "<group>"; };
+		7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveOperators.swift; sourceTree = "<group>"; };
+		7AF4977A212AF1A300B79CA3 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		A9C22C1CFE7D339DA68C650C /* Pods-instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BA009B18C59DABA0D075E9B4 /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		C64E188972BAA82CA28FED57 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +133,7 @@
 		7A4AC0002129C8FE007E108C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7A810426212ADEBB0048F2BA /* AppConfig.swift */,
 				7A384B7E21289D1F008E682E /* Assets.xcassets */,
 				7A384B8021289D1F008E682E /* LaunchScreen.storyboard */,
 			);
@@ -86,6 +143,10 @@
 		7A4AC0012129C906007E108C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */,
+				7A81041C212ABAC10048F2BA /* Functional.swift */,
+				7A8104052129F2640048F2BA /* Injection */,
+				7A8103ED2129DE9E0048F2BA /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -93,6 +154,8 @@
 		7A4AC0022129C90A007E108C /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7AD220C9212AE30F00265CA0 /* Profile */,
+				7A81040D212A7A8A0048F2BA /* Auth */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -110,6 +173,9 @@
 		7A4AC0042129C935007E108C /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				7AF4977A212AF1A300B79CA3 /* Injector.swift */,
+				7A8104062129F2FF0048F2BA /* AbstractModuleBuilder.swift */,
+				7A8103F82129F1F80048F2BA /* Assemblers */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -117,6 +183,7 @@
 		7A4AC0052129C937007E108C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				7A810420212AD8490048F2BA /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -125,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				7A4AC0072129C93E007E108C /* AppDelegate */,
+				7A81040A2129F4170048F2BA /* Network */,
+				7A81041E212ABD2B0048F2BA /* Credentials.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -135,6 +204,69 @@
 				7A384B7721289D1D008E682E /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7A8103ED2129DE9E0048F2BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */,
+				7A8103F02129DE9E0048F2BA /* ErrorParser.swift */,
+				7A8103F22129DE9E0048F2BA /* AbstractRequestManager.swift */,
+				7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */,
+				7A8103F12129DE9E0048F2BA /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7A8103F82129F1F80048F2BA /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */,
+				7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */,
+			);
+			path = Assemblers;
+			sourceTree = "<group>";
+		};
+		7A8104052129F2640048F2BA /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				7A8103FE2129F1F80048F2BA /* FactoryHelper.swift */,
+				7A8103FC2129F1F80048F2BA /* ServiceAssembler.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		7A81040A2129F4170048F2BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7A810424212ADE980048F2BA /* RequestManager.swift */,
+				7A810422212ADBB60048F2BA /* ProfileService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7A81040D212A7A8A0048F2BA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7A81040E212A7AB70048F2BA /* AuthViewController.swift */,
+				7A810410212A7B460048F2BA /* AuthViewModel.swift */,
+				7A810412212A7BE00048F2BA /* AuthViewRouter.swift */,
+				7A810417212A830E0048F2BA /* AuthViewBuilder.swift */,
+				7A810414212A7CF20048F2BA /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7AD220C9212AE30F00265CA0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7AD220CA212AE32200265CA0 /* ProfileViewController.swift */,
+				7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */,
+				7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */,
+				7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */,
+				7AD220CB212AE32200265CA0 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		9CF78C5CCA1DF1EE9E968A5F /* Frameworks */ = {
@@ -161,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A384B8621289D1F008E682E /* Build configuration list for PBXNativeTarget "instagram" */;
 			buildPhases = (
+				7A810416212A7EE60048F2BA /* SwiftLint */,
 				BA993ECBD09AB234BAC864F0 /* [CP] Check Pods Manifest.lock */,
 				7A384B7021289D1D008E682E /* Sources */,
 				7A384B7121289D1D008E682E /* Frameworks */,
@@ -214,7 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */,
 				7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */,
+				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +387,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A810416212A7EE60048F2BA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		BA993ECBD09AB234BAC864F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,7 +426,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A81040F212A7AB70048F2BA /* AuthViewController.swift in Sources */,
+				7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */,
+				7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */,
+				7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */,
+				7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */,
+				7A8104022129F1F90048F2BA /* ServiceAssembler.swift in Sources */,
+				7A8103F72129DE9E0048F2BA /* AbstractRequestManager.swift in Sources */,
+				7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */,
+				7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */,
+				7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */,
+				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
+				7A810425212ADE990048F2BA /* RequestManager.swift in Sources */,
+				7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */,
+				7A810421212AD8490048F2BA /* User.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
+				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
+				7A810411212A7B460048F2BA /* AuthViewModel.swift in Sources */,
+				7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */,
+				7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */,
+				7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */,
+				7A810418212A830E0048F2BA /* AuthViewBuilder.swift in Sources */,
+				7A810423212ADBB60048F2BA /* ProfileService.swift in Sources */,
+				7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */,
+				7A81041D212ABAC10048F2BA /* Functional.swift in Sources */,
+				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
+				7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */,
+				7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +592,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TZ3MZ977X;
 				INFOPLIST_FILE = instagram/Environments/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bizhanov.instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -433,7 +611,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TZ3MZ977X;
 				INFOPLIST_FILE = instagram/Environments/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bizhanov.instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
