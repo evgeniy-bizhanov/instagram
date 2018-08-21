@@ -11,7 +11,7 @@ class AuthViewBuilder: AbstractModuleBuilder {
         
         let router = resolver.resolve(
             AbstractAuthViewRouter.self,
-            argument: viewController
+            argument: viewController as UIViewController?
         )
         
         viewController.viewModel = resolver.resolve(

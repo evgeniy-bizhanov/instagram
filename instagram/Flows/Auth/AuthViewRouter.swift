@@ -14,7 +14,7 @@ class AuthViewRouter: AbstractAuthViewRouter {
     // MARK: - Properties
     // MARK: - Fields
     
-    weak var viewController: AuthViewController!
+    weak var viewController: UIViewController!
     
     
     // MARK: - Functions
@@ -27,7 +27,7 @@ class AuthViewRouter: AbstractAuthViewRouter {
     // MARK: - Services
     
     // MARK: - Initializers
-    init(viewController: AuthViewController?) {
+    init(viewController: UIViewController?) {
         self.viewController = viewController
     }
 }

@@ -12,14 +12,14 @@ class ProfileViewRouter: AbstractProfileViewRouter {
     // MARK: - Properties
     // MARK: - Fields
     
-    weak var viewController: ProfileViewController!
+    weak var viewController: UIViewController!
     
     
     // MARK: - Functions
     // MARK: - Services
     
     // MARK: - Initializers
-    init(viewController: ProfileViewController?) {
+    init(viewController: UIViewController?) {
         self.viewController = viewController
     }
 }
