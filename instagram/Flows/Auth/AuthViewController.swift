@@ -15,7 +15,6 @@ class AuthViewController: UIViewController {
     // MARK: - Models
     
     var viewModel: AbstractAuthViewModel!
-    var router: AbstractAuthViewRouter!
     
     
     // MARK: - Properties
@@ -27,7 +26,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        removeCache()
         webView.navigationDelegate = self
         
         if let urlRequest = viewModel.urlRequest {

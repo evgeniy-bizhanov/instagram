@@ -9,8 +9,8 @@ import Swinject
 class AuthServiceAssembler: Assembly {
     func assemble(container: Container) {
         
-        container.register(AbstractAuthViewModel.self) { _ in
-            return AuthViewModel()
+        container.register(AbstractAuthViewModel.self) { _, router in
+            return AuthViewModel(router: router)
         }
         
         container.register(AbstractAuthViewRouter.self) { _, vc in

@@ -8,11 +8,15 @@ class AuthViewBuilder: AbstractModuleBuilder {
     @IBOutlet weak var viewController: AuthViewController!
     
     override func resolve(resolver: Resolver) {
-        viewController.viewModel = resolver.resolve(AbstractAuthViewModel.self)
         
-        viewController.router = resolver.resolve(
+        let router = resolver.resolve(
             AbstractAuthViewRouter.self,
             argument: viewController
+        )
+        
+        viewController.viewModel = resolver.resolve(
+            AbstractAuthViewModel.self,
+            argument: router
         )
     }
 }

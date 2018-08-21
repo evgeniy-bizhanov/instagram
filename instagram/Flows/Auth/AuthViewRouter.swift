@@ -5,7 +5,9 @@
 import UIKit
 
 /// Роутер переходов с экрана аутентификации
-protocol AbstractAuthViewRouter { }
+protocol AbstractAuthViewRouter: class {
+    func next()
+}
 
 class AuthViewRouter: AbstractAuthViewRouter {
     // MARK: - Models
@@ -17,7 +19,9 @@ class AuthViewRouter: AbstractAuthViewRouter {
     
     // MARK: - Functions
     
-    
+    func next() {
+        viewController.performSegue(withIdentifier: "showProfile", sender: nil)
+    }
     
     
     // MARK: - Services
