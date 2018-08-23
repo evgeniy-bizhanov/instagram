@@ -63,7 +63,8 @@ extension AuthViewController: WKNavigationDelegate {
         switch result {
         case .error:
             decision = .allow
-        case .success:
+        case .success(let token):
+            viewModel.retrieved(token: token)
             decision = .cancel
         }
 

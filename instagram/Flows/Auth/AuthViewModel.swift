@@ -15,7 +15,10 @@ protocol AbstractAuthViewModel {
     
     
     /// Извлекает токен из переданного запроса
-    func retrieveToken(request: URLRequest) -> Result<Bool>
+    func retrieveToken(request: URLRequest) -> Result<String>
+    
+    /// Завершает авторизацию, с полученным токеном
+    func retrieved(token: String)
 }
 
 class AuthViewModel: AbstractAuthViewModel {
@@ -57,19 +60,20 @@ class AuthViewModel: AbstractAuthViewModel {
     
     // MARK: - Functions
     
-    func retrieveToken(request: URLRequest) -> Result<Bool> {
+    func retrieveToken(request: URLRequest) -> Result<String> {
         guard
             let fragment = request.url?.fragment,
             fragment.range(of: "access_token") != nil,
             let token = fragment.components(separatedBy: "access_token=").last else {
                 return .error("Токен не обнаружен")
         }
-        
+
+        return .success(token)
+    }
+    
+    func retrieved(token: String) {
         Credentials.token = token
-        
         router.next()
-        
-        return .success(true)
     }
     
     
