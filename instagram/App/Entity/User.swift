@@ -1,6 +1,9 @@
 //
-//  Сущьность пользователя получаемая с сервера
+//  Хранит информацию о пользователе
 //
+
+
+// MARK: - User
 
 struct UserResponse: Decodable {
     let data: User
@@ -11,10 +14,10 @@ struct User: Decodable {
     let username: String
     let fullName: String
     let profilePicture: String
-    let bio: String
-    let website: String
-    let isBusiness: Bool
-    let counts: UserCounts
+    let bio: String?
+    let website: String?
+    let isBusiness: Bool?
+    let counts: UserCounts?
     
     enum CodingKeys: String, CodingKey {
         case id

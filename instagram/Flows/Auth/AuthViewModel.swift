@@ -43,7 +43,8 @@ class AuthViewModel: AbstractAuthViewModel {
         components?.queryItems = [
             URLQueryItem(name: "client_id", value: clientId),
             URLQueryItem(name: "redirect_uri", value: redirectUri),
-            URLQueryItem(name: "response_type", value: "token")
+            URLQueryItem(name: "response_type", value: "token"),
+            URLQueryItem(name: "scope", value: "basic+public_content+comments+relationships+likes+follower_list")
         ]
 
         return components?.url

@@ -26,7 +26,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        removeCache()
+//        removeCache()
         webView.navigationDelegate = self
         
         if let urlRequest = viewModel.urlRequest {
