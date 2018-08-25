@@ -19,5 +19,9 @@ class Credentials {
         set { UserDefaults.standard.set(newValue, forKey: tokenKey) }
     }
     
+    static func logout() {
+        UserDefaults.standard.removeObject(forKey: tokenKey)
+    }
+    
     private init() { }
 }

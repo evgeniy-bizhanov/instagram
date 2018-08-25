@@ -26,20 +26,11 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        removeCache()
+        
         webView.navigationDelegate = self
         
         if let urlRequest = viewModel.urlRequest {
             webView.load(urlRequest)
-        }
-    }
-    
-    private func removeCache() {
-        let datastore = WKWebsiteDataStore.default()
-        datastore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
-            records.forEach {
-                datastore.removeData(ofTypes: $0.dataTypes, for: [$0], completionHandler: { })
-            }
         }
     }
     
