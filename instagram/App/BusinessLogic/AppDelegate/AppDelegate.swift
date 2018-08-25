@@ -19,14 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        
-        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
-        window?.rootViewController = storyboard.instantiateInitialViewController()
+        window?.rootViewController = RootControllerFactory().viewController()
         window?.makeKeyAndVisible()
-        
-//        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-//        window?.rootViewController = storyboard.instantiateInitialViewController()
-//        window?.makeKeyAndVisible()
         
         return true
     }

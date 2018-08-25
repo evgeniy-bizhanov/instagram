@@ -15,8 +15,12 @@ class Credentials {
     
     /// Токен пользователя
     static var token: String? {
-        get { return UserDefaults.standard.value(forKey: tokenKey) as? String }
+        get { return UserDefaults.standard.string(forKey: tokenKey) }
         set { UserDefaults.standard.set(newValue, forKey: tokenKey) }
+    }
+    
+    static func logout() {
+        UserDefaults.standard.removeObject(forKey: tokenKey)
     }
     
     private init() { }

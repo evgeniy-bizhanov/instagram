@@ -9,8 +9,8 @@ import Swinject
 class ProfileServiceAssembler: Assembly {
     func assemble(container: Container) {
         
-        container.register(ProfileService.self) { resolver in
-            return Injector.makeFactory(ProfileRequest.self, resolver: resolver)
+        container.register(UserService.self) { resolver in
+            return Injector.makeFactory(ApiManager.self, resolver: resolver)
         }
         
         container.register(AbstractProfileViewModel.self) { _, service in

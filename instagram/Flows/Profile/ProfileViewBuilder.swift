@@ -11,12 +11,12 @@ class ProfileViewBuilder: AbstractModuleBuilder {
         
         viewController.viewModel = resolver.resolve(
             AbstractProfileViewModel.self,
-            argument: resolver.resolve(ProfileService.self)
+            argument: resolver.resolve(UserService.self)
         )
         
         viewController.router = resolver.resolve(
             AbstractProfileViewRouter.self,
-            argument: viewController
+            argument: viewController as UIViewController?
         )
     }
 }
