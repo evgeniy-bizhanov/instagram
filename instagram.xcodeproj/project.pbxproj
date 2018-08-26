@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A109A20212ECA85001FEE44 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A1F212ECA85001FEE44 /* Media.swift */; };
 		7A109A22212FD56C001FEE44 /* TagsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A21212FD56C001FEE44 /* TagsService.swift */; };
+		7A37B2C92132B19700D1E1C0 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 7A37B2C82132B19700D1E1C0 /* Tasks */; };
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		7A109A1F212ECA85001FEE44 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		7A109A21212FD56C001FEE44 /* TagsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsService.swift; sourceTree = "<group>"; };
+		7A37B2C82132B19700D1E1C0 /* Tasks */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
 		7A384B7421289D1D008E682E /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A384B7721289D1D008E682E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		7A384B7621289D1D008E682E /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				7A37B2C82132B19700D1E1C0 /* Tasks */,
 				7A4AC0032129C90C007E108C /* App */,
 				7A4AC0022129C90A007E108C /* Flows */,
 				7A4AC0012129C906007E108C /* Core */,
@@ -399,6 +402,7 @@
 				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
 				7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
+				7A37B2C92132B19700D1E1C0 /* Tasks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
