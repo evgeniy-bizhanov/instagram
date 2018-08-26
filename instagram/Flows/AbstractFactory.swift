@@ -12,9 +12,9 @@ private enum ControllerType: String, CustomStringConvertible {
     /// Контроллер профиля пользователя
     case profile
     
-    /// Контроллер авторизации для iPad
-    case iPadAuth
-    
+//    /// Контроллер авторизации для iPad
+//    case iPadAuth
+
     /// Контроллер профиля пользователя для iPad
     case iPadProfile
     
@@ -47,16 +47,42 @@ class AbstractFactory {
     }
 }
 
-final class FirstViewControllerBuilder: AbstractFactory, Builder {
-    
+final class IPhoneFactory: AbstractFactory, Builder {
+
     func viewController(isAuthenticated authenticated: Bool) -> UIViewController? {
-        return viewController(ofType: authenticated ? .profile : .auth)
+        return authenticated ? profileViewController() : authViewController()
+    }
+    
+    private func authViewController() -> AuthViewController? {
+        let viewController = self.viewController(ofType: .auth) as? AuthViewController
+        let router = AuthViewRouter(viewController: viewController)
+        let viewModel = AuthViewModel(router: router)
+        
+        viewController?.viewModel = viewModel
+        return viewController
+    }
+    
+    private func profileViewController() -> ProfileViewController? {
+        return viewController(ofType: .profile) as? ProfileViewController
     }
 }
 
-final class FirstViewControllerIPadBuilder: AbstractFactory, Builder {
-    
+final class IPadFactory: AbstractFactory, Builder {
+
     func viewController(isAuthenticated authenticated: Bool) -> UIViewController? {
-        return viewController(ofType: authenticated ? .iPadProfile : .iPadAuth)
+        return authenticated ? profileViewController() : authViewController()
+    }
+    
+    private func authViewController() -> AuthViewController? {
+        let viewController = self.viewController(ofType: .auth) as? AuthViewController
+        let router = IPadAuthViewRouter(viewController: viewController)
+        let viewModel = AuthViewModel(router: router)
+        
+        viewController?.viewModel = viewModel
+        return viewController
+    }
+    
+    private func profileViewController() -> UIViewController? {
+        return viewController(ofType: .iPadProfile)
     }
 }

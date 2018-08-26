@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A109A20212ECA85001FEE44 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A1F212ECA85001FEE44 /* Media.swift */; };
 		7A109A22212FD56C001FEE44 /* TagsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A21212FD56C001FEE44 /* TagsService.swift */; };
+		7A37B2BF2131469600D1E1C0 /* IPadAuthViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A37B2BE2131469600D1E1C0 /* IPadAuthViewRouter.swift */; };
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
@@ -41,7 +42,6 @@
 		7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD220CB212AE32200265CA0 /* Profile.storyboard */; };
 		7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */; };
 		7AEF38BC212FD85300E1E7EC /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF38BB212FD85300E1E7EC /* Tags.swift */; };
-		7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */; };
 		7AEF38C32130288900E1E7EC /* IPadProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */; };
 		7AEF38C521310E6200E1E7EC /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF38C421310E6200E1E7EC /* AbstractFactory.swift */; };
 		7AEF38C821311FA200E1E7EC /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF38C721311FA200E1E7EC /* Foundation.swift */; };
@@ -54,6 +54,7 @@
 /* Begin PBXFileReference section */
 		7A109A1F212ECA85001FEE44 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		7A109A21212FD56C001FEE44 /* TagsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsService.swift; sourceTree = "<group>"; };
+		7A37B2BE2131469600D1E1C0 /* IPadAuthViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadAuthViewRouter.swift; sourceTree = "<group>"; };
 		7A384B7421289D1D008E682E /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A384B7721289D1D008E682E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewRouter.swift; sourceTree = "<group>"; };
 		7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveOperators.swift; sourceTree = "<group>"; };
 		7AEF38BB212FD85300E1E7EC /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
-		7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPadAuth.storyboard; sourceTree = "<group>"; };
 		7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPadProfile.storyboard; sourceTree = "<group>"; };
 		7AEF38C421310E6200E1E7EC /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		7AEF38C721311FA200E1E7EC /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		7AEF38BF2130285D00E1E7EC /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */,
+				7A37B2BE2131469600D1E1C0 /* IPadAuthViewRouter.swift */,
 				7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */,
 			);
 			path = iPad;
@@ -397,7 +397,6 @@
 				7A810415212A7CF20048F2BA /* Auth.storyboard in Resources */,
 				7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */,
 				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
-				7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +486,7 @@
 				7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */,
 				7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */,
 				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
+				7A37B2BF2131469600D1E1C0 /* IPadAuthViewRouter.swift in Sources */,
 				7A109A20212ECA85001FEE44 /* Media.swift in Sources */,
 				7A810425212ADE990048F2BA /* RequestManager.swift in Sources */,
 				7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */,
