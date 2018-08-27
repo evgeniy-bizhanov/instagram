@@ -22,15 +22,5 @@ class IPadProfileViewController: UIViewController {
         childViewLabel1.text = childView1.coordsRelativeToWindow().debugDescription
         childViewLabel2.text = childView2.coordsRelativeToWindow().debugDescription
         childViewLabel3.text = childView3.coordsRelativeToWindow().debugDescription
-        
-//        rootViewLabel.text = rootView.superview?.convert(rootView.frame.origin, to: nil).debugDescription
-//        childViewLabel1.text = childView1.superview?.convert(childView1.frame.origin, to: nil).debugDescription
-//        childViewLabel2.text = childView2.superview?.convert(childView2.frame.origin, to: nil).debugDescription
-//        childViewLabel3.text = childView3.superview?.convert(childView3.frame.origin, to: nil).debugDescription
-        
-//        rootViewLabel.text = rootView.frame.origin.debugDescription
-//        childViewLabel1.text = childView1.frame.origin.debugDescription
-//        childViewLabel2.text = childView2.frame.origin.debugDescription
-//        childViewLabel3.text = childView3.frame.origin.debugDescription
     }
 }

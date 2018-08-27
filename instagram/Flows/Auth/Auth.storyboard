@@ -39,6 +39,7 @@
                     <connections>
                         <outlet property="webView" destination="190-n2-HCP" id="JVL-pV-1mZ"/>
                         <segue destination="dVK-4r-I3I" kind="show" identifier="showProfile" id="OiG-BN-2Jp"/>
+                        <segue destination="2pU-Zu-mhR" kind="show" identifier="iPadShowProfile" id="DzJ-I7-RoE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-xc-SeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,13 +51,21 @@
             </objects>
             <point key="canvasLocation" x="86" y="132"/>
         </scene>
+        <!--IPadProfile-->
+        <scene sceneID="BPQ-Ju-Uuo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IPadProfile" id="2pU-Zu-mhR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaq-ci-EwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="7"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="B08-Ht-QN9">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="dVK-4r-I3I" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUP-1a-hsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="131"/>
+            <point key="canvasLocation" x="632" y="271"/>
         </scene>
     </scenes>
 </document>
