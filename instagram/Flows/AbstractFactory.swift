@@ -55,10 +55,10 @@ final class IPhoneFactory: AbstractFactory, Builder {
     
     private func authViewController() -> AuthViewController? {
         let viewController = self.viewController(ofType: .auth) as? AuthViewController
-        let router = AuthViewRouter(viewController: viewController)
-        let viewModel = AuthViewModel(router: router)
         
-        viewController?.viewModel = viewModel
+        viewController?.viewModel = AuthViewModel()
+        viewController?.router = AuthViewRouter(viewController: viewController)
+        
         return viewController
     }
     
@@ -75,10 +75,10 @@ final class IPadFactory: AbstractFactory, Builder {
     
     private func authViewController() -> AuthViewController? {
         let viewController = self.viewController(ofType: .auth) as? AuthViewController
-        let router = IPadAuthViewRouter(viewController: viewController)
-        let viewModel = AuthViewModel(router: router)
         
-        viewController?.viewModel = viewModel
+        viewController?.viewModel = AuthViewModel()
+        viewController?.router = IPadAuthViewRouter(viewController: viewController)
+        
         return viewController
     }
     
