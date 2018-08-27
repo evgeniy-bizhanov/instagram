@@ -7,12 +7,12 @@ import UIKit
 class RootControllerFactory {
     func viewController() -> UIViewController? {
         let director = RootControllerBuilder()
-        
+//        Credentials.logout()
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
-            director.builder = FirstViewControllerBuilder()
+            director.builder = IPhoneFactory()
         case .pad:
-            director.builder = FirstViewControllerIPadBuilder()
+            director.builder = IPadFactory()
         default:
             assertionFailure("Устройство не поддерживается")
         }

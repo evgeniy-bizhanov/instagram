@@ -15,6 +15,7 @@ class AuthViewController: UIViewController {
     // MARK: - Models
     
     var viewModel: AbstractAuthViewModel!
+    var router: AbstractAuthViewRouter!
     
     
     // MARK: - Properties
@@ -56,6 +57,7 @@ extension AuthViewController: WKNavigationDelegate {
             decision = .allow
         case .success(let token):
             viewModel.retrieved(token: token)
+            router.next()
             decision = .cancel
         }
 

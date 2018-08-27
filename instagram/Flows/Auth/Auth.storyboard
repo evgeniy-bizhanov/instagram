@@ -27,7 +27,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="190-n2-HCP" firstAttribute="bottom" secondItem="YPr-O6-xUy" secondAttribute="bottom" id="DT8-rQ-iZX"/>
                             <constraint firstItem="190-n2-HCP" firstAttribute="trailing" secondItem="YPr-O6-xUy" secondAttribute="trailing" id="d2U-dg-Nam"/>
@@ -39,6 +39,7 @@
                     <connections>
                         <outlet property="webView" destination="190-n2-HCP" id="JVL-pV-1mZ"/>
                         <segue destination="dVK-4r-I3I" kind="show" identifier="showProfile" id="OiG-BN-2Jp"/>
+                        <segue destination="TSS-2t-N53" kind="show" identifier="showIPadProfile" id="lgh-GO-NIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-xc-SeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,13 +51,21 @@
             </objects>
             <point key="canvasLocation" x="86" y="132"/>
         </scene>
+        <!--IPadProfile-->
+        <scene sceneID="vW8-an-tw9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IPadProfile" id="TSS-2t-N53" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNW-lZ-uod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="14"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="B08-Ht-QN9">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="dVK-4r-I3I" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUP-1a-hsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="131"/>
+            <point key="canvasLocation" x="630" y="248"/>
         </scene>
     </scenes>
 </document>

@@ -27,7 +27,7 @@ class AuthViewModel: AbstractAuthViewModel {
     
     // MARK: - Properties
     
-    var router: AbstractAuthViewRouter!
+//    var router: AbstractAuthViewRouter!
     
     
     // MARK: - Fields
@@ -74,7 +74,7 @@ class AuthViewModel: AbstractAuthViewModel {
     
     func retrieved(token: String) {
         Credentials.token = token
-        router.next()
+//        router.next()
     }
     
     
@@ -83,7 +83,7 @@ class AuthViewModel: AbstractAuthViewModel {
     
     // MARK: - Initializers
     
-    init(router: AbstractAuthViewRouter?) {
-        self.router = router
-    }
+//    init(router: AbstractAuthViewRouter?) {
+//        self.router = router
+//    }
 }
