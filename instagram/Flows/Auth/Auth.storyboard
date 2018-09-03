@@ -38,8 +38,8 @@
                     </view>
                     <connections>
                         <outlet property="webView" destination="190-n2-HCP" id="JVL-pV-1mZ"/>
-                        <segue destination="dVK-4r-I3I" kind="show" identifier="showProfile" id="OiG-BN-2Jp"/>
                         <segue destination="2pU-Zu-mhR" kind="show" identifier="iPadShowProfile" id="DzJ-I7-RoE"/>
+                        <segue destination="3Xi-XS-B5f" kind="show" identifier="showProfile" id="afJ-sX-H8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-xc-SeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,13 +59,43 @@
             </objects>
             <point key="canvasLocation" x="654" y="7"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="B08-Ht-QN9">
+        <!--Tab Bar Controller-->
+        <scene sceneID="7qZ-r7-wfW">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="dVK-4r-I3I" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jUP-1a-hsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="3Xi-XS-B5f" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HqZ-bx-pCf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qQx-jp-qQ4" kind="relationship" relationship="viewControllers" id="ZY6-zJ-9b3"/>
+                        <segue destination="pa9-mO-bmi" kind="relationship" relationship="viewControllers" id="k5V-SB-0Kr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aF-lQ-VMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632" y="271"/>
+            <point key="canvasLocation" x="1143" y="132"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="yHw-pY-Yme">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tags" id="pa9-mO-bmi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gNi-9R-3ju"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4o-zB-iLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="259"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="9If-kO-EJu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="qQx-jp-qQ4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LAf-Cc-Ct9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dg-8Y-PvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685" y="6"/>
         </scene>
     </scenes>
 </document>

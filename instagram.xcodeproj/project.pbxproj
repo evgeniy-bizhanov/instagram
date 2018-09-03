@@ -37,6 +37,7 @@
 		7A810425212ADE990048F2BA /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810424212ADE980048F2BA /* RequestManager.swift */; };
 		7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810426212ADEBB0048F2BA /* AppConfig.swift */; };
 		7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */; };
+		7A9B3D2A213D523E001EF23C /* Tags.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B3D29213D523E001EF23C /* Tags.storyboard */; };
 		7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CA212AE32200265CA0 /* ProfileViewController.swift */; };
 		7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */; };
 		7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */; };
@@ -88,6 +89,7 @@
 		7A810424212ADE980048F2BA /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		7A810426212ADEBB0048F2BA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceAssembler.swift; sourceTree = "<group>"; };
+		7A9B3D29213D523E001EF23C /* Tags.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tags.storyboard; sourceTree = "<group>"; };
 		7AD220CA212AE32200265CA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7AD220CB212AE32200265CA0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				7AEF38CD213122F000E1E7EC /* RootViewControllerBuilder.swift */,
 				7AEF38C9213120E100E1E7EC /* RootViewControllerFactory.swift */,
 				7AEF38BF2130285D00E1E7EC /* iPad */,
+				7A9B3D28213D5220001EF23C /* Tags */,
 				7AD220C9212AE30F00265CA0 /* Profile */,
 				7A81040D212A7A8A0048F2BA /* Auth */,
 			);
@@ -293,6 +296,14 @@
 				7A810414212A7CF20048F2BA /* Auth.storyboard */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		7A9B3D28213D5220001EF23C /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				7A9B3D29213D523E001EF23C /* Tags.storyboard */,
+			);
+			path = Tags;
 			sourceTree = "<group>";
 		};
 		7AD220C9212AE30F00265CA0 /* Profile */ = {
@@ -410,6 +421,7 @@
 				7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */,
 				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
 				7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */,
+				7A9B3D2A213D523E001EF23C /* Tags.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
 				7A37B2C92132B19700D1E1C0 /* Tasks in Resources */,
 			);
