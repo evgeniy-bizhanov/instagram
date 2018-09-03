@@ -9,7 +9,7 @@ struct TagSearchResponse: Decodable {
     let data: [TagInfo]
 }
 
-struct TagInfo: Decodable {
+struct TagInfo: Mappable {
     let name: String
     let mediaCount: Int
     

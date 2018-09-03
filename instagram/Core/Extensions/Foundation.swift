@@ -11,3 +11,5 @@ extension String {
         self = self.capitalizingFirstLetter()
     }
 }
+
+extension Array: Mappable where Element: Decodable & Encodable {}
