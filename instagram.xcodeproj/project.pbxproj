@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7A109A20212ECA85001FEE44 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A1F212ECA85001FEE44 /* Media.swift */; };
 		7A109A22212FD56C001FEE44 /* TagsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A109A21212FD56C001FEE44 /* TagsService.swift */; };
+		7A37B2C92132B19700D1E1C0 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 7A37B2C82132B19700D1E1C0 /* Tasks */; };
+		7A37B2CB2132BA7200D1E1C0 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A37B2CA2132BA7200D1E1C0 /* UIKit.swift */; };
+		7A37B2CD2132BC2300D1E1C0 /* IPadProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A37B2CC2132BC2300D1E1C0 /* IPadProfileViewController.swift */; };
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
@@ -40,6 +43,7 @@
 		7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */; };
 		7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD220CB212AE32200265CA0 /* Profile.storyboard */; };
 		7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */; };
+		7ADF3B9E21347101007754C9 /* IPadAuthViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF3B9D21347101007754C9 /* IPadAuthViewRouter.swift */; };
 		7AEF38BC212FD85300E1E7EC /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF38BB212FD85300E1E7EC /* Tags.swift */; };
 		7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */; };
 		7AEF38C32130288900E1E7EC /* IPadProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */; };
@@ -54,6 +58,9 @@
 /* Begin PBXFileReference section */
 		7A109A1F212ECA85001FEE44 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		7A109A21212FD56C001FEE44 /* TagsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsService.swift; sourceTree = "<group>"; };
+		7A37B2C82132B19700D1E1C0 /* Tasks */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
+		7A37B2CA2132BA7200D1E1C0 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
+		7A37B2CC2132BC2300D1E1C0 /* IPadProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadProfileViewController.swift; sourceTree = "<group>"; };
 		7A384B7421289D1D008E682E /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A384B7721289D1D008E682E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 		7AD220CD212AE32200265CA0 /* ProfileViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBuilder.swift; sourceTree = "<group>"; };
 		7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewRouter.swift; sourceTree = "<group>"; };
 		7AD220D4212AEB9E00265CA0 /* ReactiveOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveOperators.swift; sourceTree = "<group>"; };
+		7ADF3B9D21347101007754C9 /* IPadAuthViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadAuthViewRouter.swift; sourceTree = "<group>"; };
 		7AEF38BB212FD85300E1E7EC /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPadAuth.storyboard; sourceTree = "<group>"; };
 		7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPadProfile.storyboard; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		7A384B7621289D1D008E682E /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				7A37B2C82132B19700D1E1C0 /* Tasks */,
 				7A4AC0032129C90C007E108C /* App */,
 				7A4AC0022129C90A007E108C /* Flows */,
 				7A4AC0012129C906007E108C /* Core */,
@@ -303,6 +312,8 @@
 			children = (
 				7AEF38C02130287B00E1E7EC /* IPadAuth.storyboard */,
 				7AEF38C22130288900E1E7EC /* IPadProfile.storyboard */,
+				7A37B2CC2132BC2300D1E1C0 /* IPadProfileViewController.swift */,
+				7ADF3B9D21347101007754C9 /* IPadAuthViewRouter.swift */,
 			);
 			path = iPad;
 			sourceTree = "<group>";
@@ -311,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				7AEF38C721311FA200E1E7EC /* Foundation.swift */,
+				7A37B2CA2132BA7200D1E1C0 /* UIKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -399,6 +411,7 @@
 				7AD220D3212AE3D800265CA0 /* Profile.storyboard in Resources */,
 				7AEF38C12130287B00E1E7EC /* IPadAuth.storyboard in Resources */,
 				7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */,
+				7A37B2C92132B19700D1E1C0 /* Tasks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +491,7 @@
 				7AEF38CA213120E100E1E7EC /* RootViewControllerFactory.swift in Sources */,
 				7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */,
 				7AEF38BC212FD85300E1E7EC /* Tags.swift in Sources */,
+				7A37B2CB2132BA7200D1E1C0 /* UIKit.swift in Sources */,
 				7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */,
 				7AD220D2212AE3D100265CA0 /* ProfileViewBuilder.swift in Sources */,
 				7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */,
@@ -487,10 +501,12 @@
 				7AD220D5212AEB9E00265CA0 /* ReactiveOperators.swift in Sources */,
 				7A8104042129F1F90048F2BA /* FactoryHelper.swift in Sources */,
 				7A8103F62129DE9E0048F2BA /* RequestRouter.swift in Sources */,
+				7A37B2CD2132BC2300D1E1C0 /* IPadProfileViewController.swift in Sources */,
 				7A109A20212ECA85001FEE44 /* Media.swift in Sources */,
 				7A810425212ADE990048F2BA /* RequestManager.swift in Sources */,
 				7A81041F212ABD2B0048F2BA /* Credentials.swift in Sources */,
 				7A810421212AD8490048F2BA /* User.swift in Sources */,
+				7ADF3B9E21347101007754C9 /* IPadAuthViewRouter.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
 				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
 				7AEF38C821311FA200E1E7EC /* Foundation.swift in Sources */,

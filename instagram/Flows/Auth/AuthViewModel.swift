@@ -27,9 +27,6 @@ class AuthViewModel: AbstractAuthViewModel {
     
     // MARK: - Properties
     
-    var router: AbstractAuthViewRouter!
-    
-    
     // MARK: - Fields
     
     let clientId = "9882e5eb63b044e199a056dc221546b9"
@@ -74,16 +71,10 @@ class AuthViewModel: AbstractAuthViewModel {
     
     func retrieved(token: String) {
         Credentials.token = token
-        router.next()
     }
     
     
     // MARK: - Services
     
-    
     // MARK: - Initializers
-    
-    init(router: AbstractAuthViewRouter?) {
-        self.router = router
-    }
 }
