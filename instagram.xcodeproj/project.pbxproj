@@ -38,6 +38,7 @@
 		7A810427212ADEBB0048F2BA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810426212ADEBB0048F2BA /* AppConfig.swift */; };
 		7A810429212ADFB20048F2BA /* ProfileServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */; };
 		7A9B3D2A213D523E001EF23C /* Tags.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B3D29213D523E001EF23C /* Tags.storyboard */; };
+		7A9B3D2C213D57AE001EF23C /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B3D2B213D57AE001EF23C /* TagsViewController.swift */; };
 		7AD220CF212AE3C900265CA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CA212AE32200265CA0 /* ProfileViewController.swift */; };
 		7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */; };
 		7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD220CE212AE32200265CA0 /* ProfileViewRouter.swift */; };
@@ -90,6 +91,7 @@
 		7A810426212ADEBB0048F2BA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceAssembler.swift; sourceTree = "<group>"; };
 		7A9B3D29213D523E001EF23C /* Tags.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tags.storyboard; sourceTree = "<group>"; };
+		7A9B3D2B213D57AE001EF23C /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		7AD220CA212AE32200265CA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7AD220CB212AE32200265CA0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		7AD220CC212AE32200265CA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		7A9B3D28213D5220001EF23C /* Tags */ = {
 			isa = PBXGroup;
 			children = (
+				7A9B3D2B213D57AE001EF23C /* TagsViewController.swift */,
 				7A9B3D29213D523E001EF23C /* Tags.storyboard */,
 			);
 			path = Tags;
@@ -531,6 +534,7 @@
 				7A810423212ADBB60048F2BA /* ApiManager.swift in Sources */,
 				7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */,
 				7A81041D212ABAC10048F2BA /* Functional.swift in Sources */,
+				7A9B3D2C213D57AE001EF23C /* TagsViewController.swift in Sources */,
 				7A5EFB86212EB46100F2C712 /* UserService.swift in Sources */,
 				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
 				7AEF38C521310E6200E1E7EC /* AbstractFactory.swift in Sources */,
