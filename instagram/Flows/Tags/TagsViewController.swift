@@ -26,9 +26,10 @@ class TagsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search.."
-        searchController.searchBar.reactive.text ~ viewModel.searchString
+//        searchController.searchBar.reactive.text ~ viewModel.searchString
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         
@@ -52,6 +53,12 @@ class TagsViewController: UITableViewController {
     // MARK: - Initializers
 }
 
+extension TagsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        viewModel.searchString.value = searchController.searchBar.text
+    }
+}
+
 extension TagsViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.searchResult?.count ?? 0
@@ -62,8 +69,8 @@ extension TagsViewController {
         
         let item = viewModel.searchResult?[indexPath.row]
         
-        cell.textLabel?.text = "#\(item?.name ?? "")"
-        cell.detailTextLabel?.text = "\(item?.mediaCount ?? 0) публикаций"
+        cell.textLabel?.text = item?.displayName
+        cell.detailTextLabel?.text = item?.displayMediaCount
         
         return cell
     }

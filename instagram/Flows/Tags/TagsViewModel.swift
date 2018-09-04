@@ -8,6 +8,14 @@ import ReactiveKit
 struct VMTagInfo: Decodable {
     let name: String
     let mediaCount: Int
+    
+    var displayName: String {
+        return "#\(name)"
+    }
+    
+    var displayMediaCount: String {
+        return "\(mediaCount) публикаций"
+    }
 }
 
 class TagsViewModel {
