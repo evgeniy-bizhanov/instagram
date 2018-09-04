@@ -17,6 +17,18 @@ struct TagInfo: Mappable {
         case name
         case mediaCount = "media_count"
     }
+    
+    enum EncodingKeys: CodingKey {
+        case name
+        case mediaCount
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: EncodingKeys.self)
+        
+        try container.encode(name, forKey: .name)
+        try container.encode(mediaCount, forKey: .mediaCount)
+    }
 }
 
 
