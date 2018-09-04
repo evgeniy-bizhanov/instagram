@@ -8,6 +8,10 @@ class TagsViewController: UITableViewController {
     
     // MARK: - IBOutlets
     // MARK: - Models
+    
+    var viewModel: TagsViewModel!
+    
+    
     // MARK: - Properties
     
     // MARK: - Fields
@@ -22,13 +26,19 @@ class TagsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search.."
+        searchController.searchBar.reactive.text ~ viewModel.searchString
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         
         definesPresentationContext = true
+        
+        viewModel.searchCompletion = {
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,8 +52,19 @@ class TagsViewController: UITableViewController {
     // MARK: - Initializers
 }
 
-extension TagsViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        // TODO:
+extension TagsViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.searchResult?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tagCell", for: indexPath)
+        
+        let item = viewModel.searchResult?[indexPath.row]
+        
+        cell.textLabel?.text = "#\(item?.name ?? "")"
+        cell.detailTextLabel?.text = "\(item?.mediaCount ?? 0) публикаций"
+        
+        return cell
     }
 }
