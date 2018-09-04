@@ -34,6 +34,7 @@ class TagsViewModel {
     let searchString = Observable<String?>(nil)
     private var disposing: Disposable?
     
+    private lazy var snapshotId: String = String(describing: SearchTagsSnapshot.self)
     
     // MARK: - Functions
     
@@ -59,21 +60,67 @@ class TagsViewModel {
     // MARK: - Services
     
     let service: TagsService!
+    let snapshotManager: SnapshotManager!
     
     
     // MARK: - Initializers
     
-    init(service: TagsService?) {
-        self.service = service
-        
+    fileprivate func setupViewModel() {
         disposing = searchString.ignoreNil().debounce(interval: 1).observeNext { [weak self] in
             self?.search(forTag: $0)
+            
+            // Здесь можно через прокси делать снепшот, перед или после вызова метода search,
+            // будет вообще 🔥
+            if let snapshot = self?.snapshot() {
+                self?.snapshotManager.save(snapshot: snapshot)
+            }
         }
+    }
+    
+    init(service: TagsService?, snapshotManager: SnapshotManager?) {
+        self.service = service
+        self.snapshotManager = snapshotManager
+        
+        setupViewModel()
+        restoreFromSnapshot()
     }
     
     // MARK: - Deinitializers
     
     deinit {
         disposing?.dispose()
+    }
+}
+
+// MARK: - Snapshots
+
+extension TagsViewModel {
+    fileprivate struct SearchTagsSnapshot: Snapshot {
+        var id: String
+        
+        let token: String
+        let searchText: String?
+    }
+    
+    fileprivate func restoreFromSnapshot() {
+        guard
+            let snapshot: SearchTagsSnapshot = snapshotManager?.snapshot(with: snapshotId),
+            let token = Credentials.token, snapshot.token == token else {
+                return
+        }
+        
+        searchString.value = snapshot.searchText
+    }
+    
+    fileprivate func snapshot() -> SearchTagsSnapshot? {
+        guard let token = Credentials.token else {
+            return nil
+        }
+        
+        return SearchTagsSnapshot(
+            id: snapshotId,
+            token: token,
+            searchText: searchString.value
+        )
     }
 }

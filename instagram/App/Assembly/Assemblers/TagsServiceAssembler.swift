@@ -13,8 +13,12 @@ class TagsServiceAssembler: Assembly {
             return Injector.makeFactory(ApiManager.self, resolver: resolver)
         }
         
-        container.register(TagsViewModel.self) { _, service in
-            return TagsViewModel(service: service)
+        container.register(SnapshotManager.self) { _ in
+            return TagsSnapshotManager()
+        }
+        
+        container.register(TagsViewModel.self) { _, service, snapshotManager in
+            return TagsViewModel(service: service, snapshotManager: snapshotManager)
         }
     }
 }

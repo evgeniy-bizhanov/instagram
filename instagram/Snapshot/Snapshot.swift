@@ -2,6 +2,6 @@
 //  Протокол состояния моделей
 //
 
-protocol Snapshot {
-    
+protocol Snapshot: Codable {
+    var id: String { get }
 }

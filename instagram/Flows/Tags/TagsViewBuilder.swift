@@ -10,7 +10,9 @@ class TagsViewBuilder: AbstractModuleBuilder {
     override func resolve(resolver: Resolver) {
         viewController.viewModel = resolver.resolve(
             TagsViewModel.self,
-            argument: resolver.resolve(TagsService.self)
+            arguments:
+                resolver.resolve(TagsService.self),
+                resolver.resolve(SnapshotManager.self)
         )
     }
 }
