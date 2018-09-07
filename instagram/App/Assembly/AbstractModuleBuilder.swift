@@ -9,7 +9,8 @@ private let assembler: Assembler = Assembler(
     [
         ServiceAssembler(),
         AuthServiceAssembler(),
-        ProfileServiceAssembler()
+        ProfileServiceAssembler(),
+        TagsServiceAssembler()
     ]
 )
 
