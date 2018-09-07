@@ -48,6 +48,17 @@ class TagsViewController: UITableViewController {
         navigationItem.hidesSearchBarWhenScrolling = true
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let selectedPath = tableView.indexPathForSelectedRow else {
+            return
+        }
+        
+        if let destination = segue.destination as? TagPublicationsViewController {
+            destination.tag = viewModel.searchResult?[selectedPath.row]
+        }
+    }
+    
     
     // MARK: - Services
     // MARK: - Initializers
