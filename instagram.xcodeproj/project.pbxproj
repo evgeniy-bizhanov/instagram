@@ -15,6 +15,7 @@
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
+		7A3FDEC6214223D700DDDDAA /* TagsPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDEC5214223D700DDDDAA /* TagsPublicationsViewController.swift */; };
 		7A5EFB86212EB46100F2C712 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFB85212EB46100F2C712 /* UserService.swift */; };
 		7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */; };
 		7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */; };
@@ -75,6 +76,7 @@
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A384B8121289D1F008E682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A384B8321289D1F008E682E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3FDEC5214223D700DDDDAA /* TagsPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsPublicationsViewController.swift; sourceTree = "<group>"; };
 		7A5EFB85212EB46100F2C712 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
 		7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				7A9B3D2D213D8498001EF23C /* TagsViewModel.swift */,
 				7A9B3D31213D9CF9001EF23C /* TagsViewBuilder.swift */,
 				7A9B3D29213D523E001EF23C /* Tags.storyboard */,
+				7A3FDEC5214223D700DDDDAA /* TagsPublicationsViewController.swift */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */,
 				7A81041D212ABAC10048F2BA /* Functional.swift in Sources */,
 				7A9B3D2C213D57AE001EF23C /* TagsViewController.swift in Sources */,
+				7A3FDEC6214223D700DDDDAA /* TagsPublicationsViewController.swift in Sources */,
 				7A5EFB86212EB46100F2C712 /* UserService.swift in Sources */,
 				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
 				7AEF38C521310E6200E1E7EC /* AbstractFactory.swift in Sources */,
