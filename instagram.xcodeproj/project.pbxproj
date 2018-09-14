@@ -15,6 +15,13 @@
 		7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A384B7721289D1D008E682E /* AppDelegate.swift */; };
 		7A384B7F21289D1F008E682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B7E21289D1F008E682E /* Assets.xcassets */; };
 		7A384B8221289D1F008E682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A384B8021289D1F008E682E /* LaunchScreen.storyboard */; };
+		7A3FDEC6214223D700DDDDAA /* TagPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDEC5214223D700DDDDAA /* TagPublicationsViewController.swift */; };
+		7A3FDEC8214225A800DDDDAA /* TagPublicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDEC7214225A800DDDDAA /* TagPublicationsView.swift */; };
+		7A3FDECA214225B800DDDDAA /* TagPublicationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDEC9214225B800DDDDAA /* TagPublicationsPresenter.swift */; };
+		7A3FDECC214226A400DDDDAA /* TagPublicationMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDECB214226A400DDDDAA /* TagPublicationMedia.swift */; };
+		7A3FDECE2142280A00DDDDAA /* TagPublicationsDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDECD2142280A00DDDDAA /* TagPublicationsDefaultPresenter.swift */; };
+		7A3FDED3214230F800DDDDAA /* TagPublicationsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDED2214230F800DDDDAA /* TagPublicationsBuilder.swift */; };
+		7A3FDED52142315800DDDDAA /* TagPublicationsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FDED42142315800DDDDAA /* TagPublicationsAssembler.swift */; };
 		7A5EFB86212EB46100F2C712 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFB85212EB46100F2C712 /* UserService.swift */; };
 		7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */; };
 		7A8103F42129DE9E0048F2BA /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */; };
@@ -75,6 +82,13 @@
 		7A384B7E21289D1F008E682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A384B8121289D1F008E682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A384B8321289D1F008E682E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3FDEC5214223D700DDDDAA /* TagPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsViewController.swift; sourceTree = "<group>"; };
+		7A3FDEC7214225A800DDDDAA /* TagPublicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsView.swift; sourceTree = "<group>"; };
+		7A3FDEC9214225B800DDDDAA /* TagPublicationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsPresenter.swift; sourceTree = "<group>"; };
+		7A3FDECB214226A400DDDDAA /* TagPublicationMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationMedia.swift; sourceTree = "<group>"; };
+		7A3FDECD2142280A00DDDDAA /* TagPublicationsDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsDefaultPresenter.swift; sourceTree = "<group>"; };
+		7A3FDED2214230F800DDDDAA /* TagPublicationsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsBuilder.swift; sourceTree = "<group>"; };
+		7A3FDED42142315800DDDDAA /* TagPublicationsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPublicationsAssembler.swift; sourceTree = "<group>"; };
 		7A5EFB85212EB46100F2C712 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		7A8103EE2129DE9E0048F2BA /* ResponseCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
 		7A8103EF2129DE9E0048F2BA /* AbstractErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
@@ -168,6 +182,19 @@
 				7A4ABFFF2129C8F9007E108C /* Environments */,
 			);
 			path = instagram;
+			sourceTree = "<group>";
+		};
+		7A3FDED12142282C00DDDDAA /* Publications */ = {
+			isa = PBXGroup;
+			children = (
+				7A3FDEC5214223D700DDDDAA /* TagPublicationsViewController.swift */,
+				7A3FDEC7214225A800DDDDAA /* TagPublicationsView.swift */,
+				7A3FDEC9214225B800DDDDAA /* TagPublicationsPresenter.swift */,
+				7A3FDECB214226A400DDDDAA /* TagPublicationMedia.swift */,
+				7A3FDECD2142280A00DDDDAA /* TagPublicationsDefaultPresenter.swift */,
+				7A3FDED2214230F800DDDDAA /* TagPublicationsBuilder.swift */,
+			);
+			path = Publications;
 			sourceTree = "<group>";
 		};
 		7A4ABFFF2129C8F9007E108C /* Environments */ = {
@@ -281,6 +308,7 @@
 				7A8104082129F3CF0048F2BA /* AuthServiceAssembler.swift */,
 				7A810428212ADFB20048F2BA /* ProfileServiceAssembler.swift */,
 				7A9B3D33213D9E25001EF23C /* TagsServiceAssembler.swift */,
+				7A3FDED42142315800DDDDAA /* TagPublicationsAssembler.swift */,
 			);
 			path = Assemblers;
 			sourceTree = "<group>";
@@ -320,6 +348,7 @@
 		7A9B3D28213D5220001EF23C /* Tags */ = {
 			isa = PBXGroup;
 			children = (
+				7A3FDED12142282C00DDDDAA /* Publications */,
 				7A9B3D2B213D57AE001EF23C /* TagsViewController.swift */,
 				7A9B3D2D213D8498001EF23C /* TagsViewModel.swift */,
 				7A9B3D31213D9CF9001EF23C /* TagsViewBuilder.swift */,
@@ -563,6 +592,7 @@
 				7A810421212AD8490048F2BA /* User.swift in Sources */,
 				7ADF3B9E21347101007754C9 /* IPadAuthViewRouter.swift in Sources */,
 				7A384B7821289D1D008E682E /* AppDelegate.swift in Sources */,
+				7A3FDEC8214225A800DDDDAA /* TagPublicationsView.swift in Sources */,
 				7A8104072129F2FF0048F2BA /* AbstractModuleBuilder.swift in Sources */,
 				7A9B3D39213E31C6001EF23C /* Snapshot.swift in Sources */,
 				7AEF38C821311FA200E1E7EC /* Foundation.swift in Sources */,
@@ -570,6 +600,7 @@
 				7AEF38CE213122F000E1E7EC /* RootViewControllerBuilder.swift in Sources */,
 				7A9B3D37213E3150001EF23C /* SnapshotManager.swift in Sources */,
 				7A9B3D2E213D8498001EF23C /* TagsViewModel.swift in Sources */,
+				7A3FDECA214225B800DDDDAA /* TagPublicationsPresenter.swift in Sources */,
 				7AD220D0212AE3CC00265CA0 /* ProfileViewModel.swift in Sources */,
 				7A8103F32129DE9E0048F2BA /* ResponseCodable.swift in Sources */,
 				7A8104092129F3CF0048F2BA /* AuthServiceAssembler.swift in Sources */,
@@ -579,12 +610,17 @@
 				7AF4977B212AF1A400B79CA3 /* Injector.swift in Sources */,
 				7A81041D212ABAC10048F2BA /* Functional.swift in Sources */,
 				7A9B3D2C213D57AE001EF23C /* TagsViewController.swift in Sources */,
+				7A3FDED52142315800DDDDAA /* TagPublicationsAssembler.swift in Sources */,
+				7A3FDEC6214223D700DDDDAA /* TagPublicationsViewController.swift in Sources */,
+				7A3FDECE2142280A00DDDDAA /* TagPublicationsDefaultPresenter.swift in Sources */,
 				7A5EFB86212EB46100F2C712 /* UserService.swift in Sources */,
 				7A810413212A7BE00048F2BA /* AuthViewRouter.swift in Sources */,
 				7AEF38C521310E6200E1E7EC /* AbstractFactory.swift in Sources */,
+				7A3FDECC214226A400DDDDAA /* TagPublicationMedia.swift in Sources */,
 				7A8103F52129DE9E0048F2BA /* ErrorParser.swift in Sources */,
 				7A109A22212FD56C001FEE44 /* TagsService.swift in Sources */,
 				7AD220D1212AE3CF00265CA0 /* ProfileViewRouter.swift in Sources */,
+				7A3FDED3214230F800DDDDAA /* TagPublicationsBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
